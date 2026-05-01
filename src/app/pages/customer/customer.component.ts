@@ -16,10 +16,8 @@ export class CustomerComponent {
 
   customerData = {
     customer_name: '',
-    contact_person: '',
     mobile_no: '',
     email: '',
-    gst_no: '',
     address: '',
     city: '',
     state: '',
@@ -37,10 +35,8 @@ export class CustomerComponent {
 
           this.customerData = {
             customer_name: '',
-            contact_person: '',
             mobile_no: '',
             email: '',
-            gst_no: '',
             address: '',
             city: '',
             state: '',
