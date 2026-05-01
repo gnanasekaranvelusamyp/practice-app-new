@@ -1,0 +1,59 @@
+<div class="customer-container">
+
+    <h2>Customer Entry</h2>
+
+    <form>
+
+        <input type="text"
+               placeholder="Customer Name"
+               [(ngModel)]="customerData.customer_name"
+               name="customer_name">
+
+        <input type="text"
+               placeholder="Contact Person"
+               [(ngModel)]="customerData.contact_person"
+               name="contact_person">
+
+        <input type="text"
+               placeholder="Mobile Number"
+               [(ngModel)]="customerData.mobile_no"
+               name="mobile_no">
+
+        <input type="text"
+               placeholder="Email"
+               [(ngModel)]="customerData.email"
+               name="email">
+
+        <input type="text"
+               placeholder="GST Number"
+               [(ngModel)]="customerData.gst_no"
+               name="gst_no">
+
+        <textarea
+            placeholder="Address"
+            [(ngModel)]="customerData.address"
+            name="address"></textarea>
+
+        <input type="text"
+               placeholder="City"
+               [(ngModel)]="customerData.city"
+               name="city">
+
+        <input type="text"
+               placeholder="State"
+               [(ngModel)]="customerData.state"
+               name="state">
+
+        <input type="text"
+               placeholder="Pincode"
+               [(ngModel)]="customerData.pincode"
+               name="pincode">
+
+        <button type="button"
+                (click)="saveCustomer()">
+            Save Customer
+        </button>
+
+    </form>
+
+</div>
