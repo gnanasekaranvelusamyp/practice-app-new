@@ -1,14 +1,12 @@
-<app-header
-  (toggleSidebar)="toggleSidebar()">
+<app-header (toggleSidebar)="toggleSidebar()">
 </app-header>
 
 <div class="container">
 
-  <app-sidebar
-    *ngIf="isSidebarOpen">
+  <app-sidebar *ngIf="isSidebarOpen" (click)="$event.stopPropagation()">
   </app-sidebar>
 
-  <div class="content">
+  <div class="content" (click)="closeSidebar()">
     <router-outlet></router-outlet>
   </div>
 

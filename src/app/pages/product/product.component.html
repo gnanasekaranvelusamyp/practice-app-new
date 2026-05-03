@@ -1,0 +1,33 @@
+<div class="container">
+
+  <h2>Product Master</h2>
+
+  <input type="text"
+         [(ngModel)]="productData.part_No"
+         placeholder="Part No">
+
+  <br><br>
+
+  <input type="text"
+         [(ngModel)]="productData.part_Name"
+         placeholder="Part Name">
+
+  <br><br>
+
+  <input type="text"
+         [(ngModel)]="productData.uom"
+         placeholder="UOM">
+
+  <br><br>
+
+  <input type="text"
+         [(ngModel)]="productData.hsn_Code"
+         placeholder="HSN Code">
+
+  <br><br>
+
+  <button (click)="saveProduct()">
+    Save
+  </button>
+
+</div>

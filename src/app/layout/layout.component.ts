@@ -27,4 +27,8 @@ export class LayoutComponent {
     this.isSidebarOpen = !this.isSidebarOpen;
   }
 
+  closeSidebar() {
+    this.isSidebarOpen = false;
+  }
+
 }
