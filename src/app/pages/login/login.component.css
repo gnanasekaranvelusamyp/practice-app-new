@@ -73,11 +73,19 @@ button{
     margin-top: 15px;
 
     font-size: 16px;
+    transition: all 0.1s ease;
+
 }
 
 button:hover{
     background-color: black;
 }
+
+button:active{
+    transform: translateY(4px);
+}
+
+
 
 /* Mobile Responsive */
 
