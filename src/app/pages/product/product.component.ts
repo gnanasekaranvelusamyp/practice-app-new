@@ -34,7 +34,7 @@ export class ProductComponent {
 
         next: (res) =>
         {
-          alert('Saved Successfully');
+          alert('Product Saved Successfully');
 
           this.productData = {
             part_No: '',
