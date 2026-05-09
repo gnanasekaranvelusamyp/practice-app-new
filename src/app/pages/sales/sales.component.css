@@ -1,0 +1,45 @@
+.form-row{
+
+    display:flex;
+
+    align-items:center;
+
+    margin-bottom:15px;
+
+    gap:20px;
+}
+
+label{
+    width:120px;
+}
+
+input{
+    width:250px;
+    height:35px;
+
+    border:1px solid gray;
+
+    border-radius:4px;
+
+    padding-left:10px;
+}
+
+.textbox{
+
+    width:250px;
+
+    height:35px;
+
+    border:1px solid gray;
+
+    border-radius:4px;
+
+    padding-left:10px;
+}
+
+.dropdown{
+    
+    width: 250px;
+    height: 35px;
+
+}

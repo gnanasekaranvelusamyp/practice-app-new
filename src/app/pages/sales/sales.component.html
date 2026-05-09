@@ -1,0 +1,125 @@
+<div class="form-row">
+
+    <label>Customer</label>
+
+    <select [(ngModel)]="customer"
+            class="dropdown">
+
+        <option *ngFor="let item of customerList"
+                [value]="item.customer_name">
+
+            {{item.customer_name}}
+
+        </option>
+
+    </select>
+
+</div>
+
+
+<div class="form-row">
+
+    <label>Order No</label>
+
+    <input type="text"
+           [(ngModel)]="orderNo">
+
+</div>
+
+
+<hr>
+
+
+<div class="form-row">
+
+    <label>Part No</label>
+
+    <select [(ngModel)]="selectedPartNo"
+            (change)="getPartDetails()"
+            class="dropdown">
+
+        <option *ngFor="let item of partList"
+                [value]="item.part_No">
+
+            {{item.part_No}}
+
+        </option>
+
+    </select>
+
+</div>
+
+
+<div class="form-row">
+
+    <label>Part Name</label>
+
+    <input type="text"
+           [(ngModel)]="partName"
+           readonly>
+
+</div>
+
+
+<div class="form-row">
+
+    <label>Price</label>
+
+    <input type="text"
+           [(ngModel)]="price">
+
+</div>
+
+
+<div class="form-row">
+
+    <label>Qty</label>
+
+    <input type="text"
+           [(ngModel)]="qty">
+
+</div>
+
+
+<button (click)="addRow()">
+
+    Add
+
+</button>
+
+
+<hr>
+
+
+<table border="1" width="700">
+
+    <tr>
+
+        <th>Part No</th>
+
+        <th>Part Name</th>
+
+        <th>Price</th>
+
+        <th>Qty</th>
+
+        <th>Amount</th>
+
+    </tr>
+     
+
+    <tr *ngFor="let item of salesList">
+
+        <td>{{item.partNo}}</td>
+
+        <td>{{item.partName}}</td>
+
+        <td>{{item.price}}</td>
+
+        <td>{{item.qty}}</td>
+
+        <td>{{item.amount}}</td>
+
+    </tr>
+    
+</table>
