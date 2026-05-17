@@ -4,6 +4,7 @@ import { LayoutComponent } from './layout/layout.component';
 import { CustomerComponent } from './pages/customer/customer.component';
 import { ProductComponent } from './pages/product/product.component';
 import { SalesComponent } from './pages/sales/sales.component';
+import { EmployeeComponent } from './pages/employee/employee.component';
 
 export const routes: Routes = [
     { path: '', component: LoginComponent },
@@ -24,6 +25,11 @@ export const routes: Routes = [
             {
                 path:'sales',
                 component:SalesComponent
+            },
+
+            {
+                path:'employee',
+                component:EmployeeComponent
             }
 
         ]
