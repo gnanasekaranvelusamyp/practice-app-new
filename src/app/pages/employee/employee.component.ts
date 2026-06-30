@@ -4,6 +4,7 @@ import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-employee',
+  standalone: true,
   imports: [FormsModule],
   templateUrl: './employee.component.html',
   styleUrl: './employee.component.css'

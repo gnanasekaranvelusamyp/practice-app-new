@@ -5,9 +5,10 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-product',
+   standalone: true,
   imports: [CommonModule, FormsModule, HttpClientModule],
   templateUrl: './product.component.html',
-  styleUrl: './product.component.css'
+  styleUrls: ['./product.component.css']
 })
 export class ProductComponent {
      productData = {

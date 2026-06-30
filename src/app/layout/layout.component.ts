@@ -23,9 +23,15 @@ export class LayoutComponent {
 
   isSidebarOpen = true;
 
+  // toggleSidebar() {
+  //   this.isSidebarOpen = !this.isSidebarOpen;
+  // }
+
   toggleSidebar() {
-    this.isSidebarOpen = !this.isSidebarOpen;
-  }
+  console.log('Toggle Clicked');
+  this.isSidebarOpen = !this.isSidebarOpen;
+  console.log(this.isSidebarOpen);
+}
 
   closeSidebar() {
     this.isSidebarOpen = false;
